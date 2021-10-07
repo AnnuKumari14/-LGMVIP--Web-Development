@@ -1,0 +1,674 @@
+html,
+body {
+	height: 120%;
+	width: 100%;
+	overflow-x: hidden !important;
+	font-family: "Times New Roman", serif;
+	font-size: 16px;
+}
+
+/*----------------------------------carousel----------------------*/
+.navbar {
+	bottom: 440px;
+	position: absolute;
+}
+
+.navbar h3 {
+	left: 20px;
+}
+
+.navigation {
+	margin-left: 400px;
+	display: flex;
+	flex-direction: row;
+	margin-right: 30px;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation a:hover {
+	text-decoration: none;
+	color: black;
+	background-color: rgb(251, 251, 97);
+	border: 2px solid rgb(251, 251, 97);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.nav-intro {
+	position: absolute;
+	bottom: 200px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.learn-more button {
+	align-items: center;
+	background-color: rgb(78 28 70);
+	color: white;
+	padding: 7px;
+}
+
+.learn-more button:hover {
+	background-color: rgb(251, 251, 97);
+	color: black;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Algerian', serif;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+
+/*----------------------------------welcome----------------------*/
+.intro {
+	margin-top: 80px;
+}
+
+.intro p {
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	margin-left: 120px;
+	float: left;
+	width: 40%;
+}
+
+.intro img {
+	position: relative;
+	float: right;
+	border-radius: 20px;
+	margin-right: 120px;
+	width: 35%;
+	box-shadow: 10px 10px 10px black;
+}
+
+.content {
+	align-items: center;
+	display: flex;
+	margin-left: 300px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+}
+
+.table img {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70px;
+	height: 70px;
+}
+
+.text h3 {
+	color: purple;
+}
+
+.text p {
+	text-align: center;
+	justify-content: center;
+	padding: 5px;
+}
+
+.text button {
+	padding: 10px;
+	margin: 20px;
+	width: 250px;
+	background-color: rgb(251, 251, 97);
+	color: black;
+	border: 2px solid rgb(251, 251, 97);
+	border-radius: 5px;
+}
+
+.text button:hover {
+	background-color: rgb(70 20 78);
+	color: white;
+	border: 2px solid rgb(70 20 78);
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+hr {
+	height: 0px;
+	border: none;
+	border-top: 5px solid rgb(70 20 78);
+	margin-bottom: 40px;
+}
+
+/*----------------------------------projects----------------------*/
+.projects {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 60px;
+}
+
+#projid-1 {
+	border-radius: 10px 0px 0px 10px;
+}
+
+#projid-4 {
+	border-radius: 0px 10px 10px 0px;
+}
+
+#projid-1,
+#projid-3 {
+	background-color: #B3B3B3;
+}
+
+#projid-2,
+#projid-4 {
+	background-color: #8C8C8C;
+}
+
+.proj img {
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+.proj img:hover {
+	transform: scale(1.1);
+	animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+	25% {
+		box-shadow: 10px 20px 20px;
+	}
+}
+
+.proj p {
+	padding: 10px;
+	margin-left: 8px;
+	justify-content: center;
+}
+
+.projects button {
+	color: black;
+	display: flex;
+	border-radius: 15px;
+	justify-content: center;
+	padding: 15px;
+	margin: 50px;
+}
+
+#projid-1:hover {
+	background-color: rgb(251, 251, 97)
+}
+
+#projid-2:hover {
+	background-color: rgb(251, 251, 97)
+}
+
+#projid-3:hover {
+	background-color: rgb(251, 251, 97)
+}
+
+#projid-4:hover {
+	background-color: rgb(251, 251, 97)
+}
+
+.projects button:hover {
+	background-color: rgb(70 20 78);
+	color: white;
+}
+
+/*----------------------------------pricing----------------------*/
+.table {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	width: 100%;
+	margin: auto;
+}
+
+.plan {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 20px 20px;
+	margin-bottom: 50px;
+}
+
+.plan h4 {
+	color: grey;
+	padding: 15px;
+}
+
+.plan p {
+	padding: 7px;
+}
+
+.plan button {
+	padding: 10px;
+	margin: 10px;
+	background-color: rgb(251, 251, 97);
+	color: black;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.plan button:hover {
+	background-color: rgb(70 20 78);
+	color: white;
+}
+
+#standard {
+	border-right: 2px solid lightgrey;
+	padding-right: 15px;
+}
+
+#premium {
+	border-left: 2px solid lightgrey;
+	padding-left: 15px;
+}
+
+/*----------------------------------video projects----------------------*/
+.videos {
+	background-color: #7954A1;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+#video {
+	height: 450px;
+	/*More than .videos for hiding bar*/
+	margin-top: 30px;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.vid {
+	padding: 15px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/*----------------------------------team----------------------*/
+.teammate {
+	display: flex;
+	flex-direction: row;
+}
+
+.members {
+	align-items: center;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-left: 120px;
+}
+
+.members h6 {
+	margin-left: 50px;
+}
+
+.members p {
+	margin-left: 50px;
+}
+
+.members img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.members img:hover {
+	opacity: 1;
+	box-shadow: 7px 7px black;
+	cursor: pointer;
+}
+
+.links .fa-facebook {
+	position: absolute;
+	text-align: center;
+	color: black;
+	opacity: 0;
+	height: 25px;
+	width: 25px;
+	font-size: 20px;
+}
+
+.links .fa-twitter {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	font-size: 20px;
+	color: black;
+	opacity: 0;
+}
+
+.links .fa-instagram {
+	position: absolute;
+	color: rgb(15, 15, 15);
+	opacity: 0;
+	height: 25px;
+	width: 25px;
+	font-size: 20px;
+}
+
+.members:hover img {
+	opacity: 0.7;
+	filter: hue-rotate(50deg);
+	transform: translate(5px, 5px);
+}
+
+.members:hover .links .fa-facebook {
+	opacity: 1;
+}
+
+.members:hover .links .fa-twitter {
+	opacity: 1;
+}
+
+.members:hover .links .fa-instagram {
+	opacity: 1;
+}
+
+
+/* ----------------------1st half-----------------------------*/
+
+#mem1:hover+.links .fa-facebook {
+	top: 23%;
+	left: 18%;
+}
+
+#mem1:hover+.links .fa-twitter {
+	top: 23%;
+	left: 23%;
+}
+
+#mem1:hover+.links .fa-instagram {
+	top: 23%;
+	left: 27%;
+}
+
+#mem2:hover+.links .fa-facebook {
+	top: 23%;
+	left: 46%;
+}
+
+#mem2:hover+.links .fa-twitter {
+	top: 23%;
+	left: 50%;
+}
+
+#mem2:hover+.links .fa-instagram {
+	top: 23%;
+	left: 54%;
+}
+
+#mem3:hover+.links .fa-facebook {
+	top: 23%;
+	left: 72%;
+}
+
+#mem3:hover+.links .fa-twitter {
+	top: 23%;
+	left: 76%;
+}
+
+#mem3:hover+.links .fa-instagram {
+	top: 23%;
+	left: 80%;
+}
+
+
+/*----------------------2nd half-----------------------------*/
+
+#mem4:hover+.links .fa-facebook {
+	top: 85%;
+	left: 18%;
+}
+
+#mem4:hover+.links .fa-twitter {
+	top: 85%;
+	left: 23%;
+}
+
+#mem4:hover+.links .fa-instagram {
+	top: 85%;
+	left: 27%;
+}
+
+#mem5:hover+.links .fa-facebook {
+	top: 85%;
+	left: 46%;
+}
+
+#mem5:hover+.links .fa-twitter {
+	top: 85%;
+	left: 50%;
+}
+
+#mem5:hover+.links .fa-instagram {
+	top: 85%;
+	left: 54%;
+}
+
+#mem6:hover+.links .fa-facebook {
+	top: 85%;
+	left: 72%;
+}
+
+#mem6:hover+.links .fa-twitter {
+	top: 85%;
+	left: 76%;
+}
+
+#mem6:hover+.links .fa-instagram {
+	top: 85%;
+	left: 80%;
+}
+
+
+/*-----------------------slider------------------------------*/
+
+* {
+	box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+	background-color: lightgrey;
+	background-size: 100% 100%;
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 20px;
+}
+
+.slideshow-container h3 {
+	margin-top: 30px;
+}
+
+
+.mySlides {
+	display: none;
+	padding: 30px;
+}
+
+
+.circles {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.circles:hover {
+	background-color: #717171;
+}
+
+/*----------------------------------newsletter----------------------*/
+.newsletter {
+	background-image: url('images/bridge.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 500px;
+	color: white;
+	padding: 30px;
+}
+
+.signup {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.signup button {
+	background-color: rgb(251, 251, 97);
+	width: 100px;
+	padding: 5px;
+	border-radius: 10px;
+	color: black;
+}
+
+.signup button:hover {
+	background-color: rgb(70 20 78);
+	color: white;
+}
+
+/*----------------------------------blog----------------------*/
+.blogcontainer {
+	margin: auto;
+	/* margin: 20px 445px; */
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.blog img {
+	width: 80%;
+	height: 60%;
+}
+
+.blog {
+	/* border: 2px solid red; */
+	margin-top: 20px;
+	width: 50%;
+	margin-left: 60px;
+	margin-right: 60px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	/* padding: 30px; */
+}
+
+.blog h3 {
+	padding: 10px;
+	font-weight: bold;
+}
+
+.date {
+	padding: 10px 40px;
+	color: rgb(151, 151, 151);
+}
+
+.bloginfo {
+	padding: 10px;
+}
+
+.blog button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: rgb(195, 195, 195);
+	border: 2px solid rgb(195, 195, 195);
+	font-weight: 550;
+	border-radius: 3px;
+}
+
+.blog button:hover {
+	background-color: rgb(251, 251, 97);
+	border: 2px solid rgb(251, 251, 97);
+	cursor: pointer;
+}
+
+/*----------------------------------contactus----------------------*/
+.map iframe {
+	float: left;
+	display: block;
+	width: 800px;
+	height: 400px;
+	width: 50%;
+}
+
+.form {
+	justify-content: center;
+	background-color: rgb(251, 251, 97);
+	float: right;
+	width: 50%;
+	height: 400px;
+	padding: 20px;
+}
+
+.form button {
+	justify-content: center;
+	width: 280px;
+	background-color: rgb(78 28 70);
+	color: white;
+}
+
+.form input:hover {
+	box-shadow: 5px 5px 5px grey;
+}
+
+.form textarea:hover {
+	box-shadow: 5px 5px 5px grey;
+}
+
+.form button:hover {
+	box-shadow: 5px 5px 5px grey;
+}
+
+/*----------------------------------footer----------------------*/
+.end {
+	background-color: lightgrey;
+	padding: 50px 0;
+}
+
+.contain {
+	max-width: 1170px;
+	margin: auto;
+	margin-left: 100px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.para {
+	width: 30%;
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Times New Roman', serif;
+	font-size: 22px;
+}
+
+.logos i:hover {
+	transform: scale(1.1);
+	animation: mymove 3s infinite;
+}
